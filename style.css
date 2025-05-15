@@ -373,11 +373,10 @@ header {
     gap: 20px;
 }
 
-
 .software-box {
-    background: #fff;
+    background: linear-gradient(to right ,  #fffbfb, #6f6f6f);
     border-radius: 10px;
-    padding: 20px;
+    padding: 35px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
 }
@@ -693,5 +692,78 @@ header {
 
     .contact-info {
         text-align: center;
+    }
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+
+.skill{
+    text-align: center;
+    padding: 60px 10%;
+    background: linear-gradient(to right, #ffffff, #a4a4a4);
+}
+
+.skill h2 {
+    font-size: 36px;
+    color: #ff477e; 
+    margin-bottom: 10px;
+}
+
+.skill-subtext {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+
+.skill-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+
+.skill-box {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skill-box img {
+    width: 100%;
+    border-radius: 10px;
+    height: 180px;
+    object-fit: cover;
+}
+
+.skill-box h3 {
+    font-size: 22px;
+    color: #ff477e;
+    margin-top: 15px;
+}
+
+.skill-box p {
+    font-size: 16px;
+    color: #555;
+    margin-top: 10px;
+}
+
+
+.skill-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+@media (max-width: 768px) {
+    .skill-container {
+        grid-template-columns: 1fr;
     }
 }
