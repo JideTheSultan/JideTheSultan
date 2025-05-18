@@ -12,6 +12,9 @@
         <div class="name">
             <a href="index.html">Olajide Ajiga</a>
         </div>
+        <div class="menu" onclick="menu()">
+            ☰
+          </div>
         <nav>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
@@ -121,7 +124,7 @@
     <script src="script.js"></script>
 
     <script>
-        function toggleMenu() {
+        function menu() {
             const navLinks = document.querySelector('.nav-links');
             navLinks.classList.toggle('active');
         }
